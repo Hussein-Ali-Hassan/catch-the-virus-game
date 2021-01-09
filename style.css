@@ -1,23 +1,17 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(238, 179, 233);
+    background-image: url('https://image.freepik.com/free-photo/3d-illustration-copy-space-banner-group-virus-cells-coronavirus-2019-outbreak-covid19-wuhan-china-virus-disease-infection-red-background-self-quarantine-coronavirus-outbreak-concept_33829-290.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     margin: 0;
     padding: 0;
+    color: rgb(255, 255, 255);
 }
-/* 
-.grid {
-    background-color: #fff;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    width: 618px;
-    height: 618px;
-} */
 
 .row {
     background-color: #fff;
@@ -34,7 +28,7 @@ body {
 }
 
 .mole {
-    background-image: url('virus.jpg');
+    background-image: url('https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2020/02/02/nm-wuhanvirus-0202.jpg?itok=chk79Ail&timestamp=1580601417');
     background-size: 91%;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,4 +51,8 @@ body {
 
 .btn:active {
     transform: scale(0.98);
+}
+
+.btn.playing {
+    cursor: not-allowed;
 }

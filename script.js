@@ -6,6 +6,7 @@ const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', () => {
     btn.disabled = 'true';
+    btn.classList.add('playing');
     let result = 0;
     let currentTime = timeLeft.textContent;
 
@@ -38,6 +39,7 @@ btn.addEventListener('click', () => {
         if (currentTime === 0) {
             clearInterval(timer);
             clearInterval(timeId); // stop moveMole() after 60 sec
+            btn.classList.remove('playing');
             setTimeout(() => {
                 alert('Game Ended!\n You score is ' + score.textContent);
                 window.location.reload(false);
