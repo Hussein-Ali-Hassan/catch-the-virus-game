@@ -1,0 +1,59 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(238, 179, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+/* 
+.grid {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 618px;
+    height: 618px;
+} */
+
+.row {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    height: 6rem;
+}
+
+.square {
+    width: 6rem;
+    height: 6rem;
+    border: 3px solid #000;
+}
+
+.mole {
+    background-image: url('https://s3.amazonaws.com/reeve-assets-production/Coronavirus-White-Background.jpg');
+    background-size: 91%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.btn {
+    font-family: inherit;
+    border: 0;
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    margin: 12px auto 20px auto;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
