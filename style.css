@@ -34,7 +34,7 @@ body {
 }
 
 .mole {
-    background-image: url('https://s3.amazonaws.com/reeve-assets-production/Coronavirus-White-Background.jpg');
+    background-image: url('virus.jpg');
     background-size: 91%;
     background-repeat: no-repeat;
     background-position: center;

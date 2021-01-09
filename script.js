@@ -39,7 +39,7 @@ btn.addEventListener('click', () => {
             clearInterval(timer);
             clearInterval(timeId); // stop moveMole() after 60 sec
             setTimeout(() => {
-                alert('Game Ended! You score is ' + score.textContent);
+                alert('Game Ended!\n You score is ' + score.textContent);
                 window.location.reload(false);
             }, 1000);
                    }
