@@ -20,7 +20,7 @@ btn.addEventListener('click', () => {
         // assign the id of the randomPosition to hitPosition
         hitPosition = squars[randomPosition].id;
     }
-    let timeId = setInterval(randomSquare, 550); // move the Mole
+    let timeId = setInterval(randomSquare, 400); // move the Mole
 
     // score++
     squars.forEach(square => {
@@ -38,9 +38,11 @@ btn.addEventListener('click', () => {
         if (currentTime === 0) {
             clearInterval(timer);
             clearInterval(timeId); // stop moveMole() after 60 sec
-            alert('Game Ended! You score is ' + score.textContent);
-            window.location.reload(false); 
-        }
+            setTimeout(() => {
+                alert('Game Ended! You score is ' + score.textContent);
+                window.location.reload(false);
+            }, 1000);
+                   }
     }
     let timer = setInterval(countDown, 1000);
 

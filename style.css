@@ -42,6 +42,7 @@ body {
 }
 
 .btn {
+    background-color: #fff;
     font-family: inherit;
     border: 0;
     font-size: 1.5rem;
